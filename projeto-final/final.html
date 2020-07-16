@@ -40,11 +40,11 @@ function retornarParOuImpar(arrayNumeros) {
 retornarParOuImpar(arrayNum);
 
 function verificacaoNum(arrayNum) {
-  for (value of arrayNum) {
+    for (value in arrayNum) {
     var verifRepetido = arrayNum.filter(a => a == value);
     var numeroRepetido
     if (verifRepetido.length > 1 && verifRepetido[0] != numeroRepetido) {
-      document.write(pulaLinha + value + 'se repete' + verifRepetido.length + 'vezes.');
+      document.write(`</br>${value} se repete ${verifRepetido.length} vezes.`);
       numeroRepetido = verifRepetido[0];
     }
   }
